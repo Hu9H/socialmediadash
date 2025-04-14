@@ -20,8 +20,8 @@ export default function ToggleThemeButton({}: Props) {
       onClick={toggleTheme}>
       <div 
         className={cn("h-4 w-4 rounded-full z-0 bg-White transition-all dark:bg-Very-Dark-Blue",
-        {'translate-x-full': restheme=="light"},
-        {'translate-x-0' : restheme=="dark"})}
+        {'translate-x-0': restheme=="light"},
+        {'translate-x-full' : restheme=="dark"})}
       />  
     </button>
   )
