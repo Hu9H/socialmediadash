@@ -16,7 +16,7 @@ export default function ToggleThemeButton({}: Props) {
     <button 
       className={cn("flex h-5 w-10 z-0 items-center rounded-full cursor-pointer p-1",
       {'bg-Bright-Red': restheme=="light"},
-      {"Dark-Toggle" : restheme=="dark"})}
+      {"bg-gradient-to-r from-[hsl(210,78%,56%)] to-[hsl(146,68%,55%)]" : restheme=="dark"})}
       onClick={toggleTheme}>
       <div 
         className={cn("h-4 w-4 rounded-full z-0 bg-White transition-all dark:bg-Very-Dark-Blue",
