@@ -1,8 +1,7 @@
 import React from 'react';
 import { cn } from '../utils/cn';
 import { mediaData } from '../data';
-import { socialMediaAccounts } from '../data';
-// Assuming mediaData is the type for a social media account entry.
+
 
 
 export default function MediaCard(props:mediaData) {
@@ -14,7 +13,7 @@ export default function MediaCard(props:mediaData) {
         <div
         style={    props.color.includes("gradient")
             ? { backgroundImage: props.color }
-            : { backgroundColor: `var(--color-${props.color})` }
+            : { backgroundColor: props.color }
         }
         className='absolute left-0 top-0 h-1 w-full'/>
       <section className="flex w-full justify-center items-center gap-2">

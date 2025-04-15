@@ -2,7 +2,9 @@
 import Background from "./components/background";
 import Header from "./components/header";
 import MediaCard from "./components/mediaCard";
-import { socialMediaAccounts } from "./data";
+import { overviewTodayData, socialMediaAccounts } from "./data";
+import Container from './components/container';
+import Overviewtoday from "./components/overviewtoday";
 
 
 export default function Home() {
@@ -11,7 +13,7 @@ export default function Home() {
       <Background/>
       <main className="min-h-screen w-full max-w-8xl px-5 pb-2 pt-10 md:px-8 mx-auto ">
         <Header/>
-        <section className="mt-5 flex flex-row justify-between gap-5">
+        <Container>
         {socialMediaAccounts.map((d,i) => (
           <MediaCard
             key={i}
@@ -26,7 +28,25 @@ export default function Home() {
           
           />
         ))}
+        </Container>
+        <section className="">
+        <h2 className="mb-8 mt-4 text-center text-2xl font-semibold text-Dark-Grayish-Blue dark:text-White sm:text-start">
+          Overview - Today
+        </h2>
         </section>
+        <Container>
+          {overviewTodayData.map((d,i)=>(
+            <Overviewtoday
+            key={i}
+            platform= {d.platform}
+            type={d.type}
+            icon={d.icon}
+            value= {d.value}
+            percentage={d.percentage}
+    
+            />
+          ))}
+        </Container>
       </main>
     </div>
   );
