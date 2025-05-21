@@ -2,9 +2,9 @@
 import {useEffect, useState}from 'react'
 import { cn } from '../utils/cn'
 import { useTheme } from 'next-themes';
-type Props = {}
 
-export default function ToggleThemeButton({}: Props) {
+
+export default function ToggleThemeButton() {
     const {resolvedTheme, setTheme} =  useTheme()
     const [mounted, setMounted] = useState(false)
     useEffect(() => {
