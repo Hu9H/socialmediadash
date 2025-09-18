@@ -13,7 +13,7 @@ export default function Home() {
       <Background/>
       <main className="min-h-screen w-full max-w-8xl px-5 pb-2 pt-10 md:px-8 mx-auto ">
         <Header/>
-        <Container>
+        <Container >
         {socialMediaAccounts.map((d,i) => (
           <MediaCard
             key={i}
@@ -34,7 +34,7 @@ export default function Home() {
           Overview - Today
         </h2>
         </section>
-        <Container>
+        <Container >
           {overviewTodayData.map((d,i)=>(
             <Overviewtoday
             key={i}

@@ -5,7 +5,7 @@ import { cn } from '../utils/cn'
 export default function Overviewtoday (props:overviewData) {
   return (
     <div 
-    className='relative flex flex-col justify-between overflow-hidden rounded bg-Light-Grayish-Blue dark:bg-Dark-Desaturated-Blue w-[256px] h-[156px] p-8 py-4'
+    className='relative flex flex-col justify-between overflow-hidden rounded bg-Light-Grayish-Blue dark:bg-Dark-Desaturated-Blue w-[256px] h-[156px] p-8 py-4 m-2'
     >
     <section className='flex justify-between gap-2 '>
         
