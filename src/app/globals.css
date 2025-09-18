@@ -1,6 +1,22 @@
 @import "tailwindcss";
 
 @custom-variant dark (&:where(.dark, .dark *));
+@layer utilities {
+  
+  .desktop-wide\:grid-cols-4 {
+    @media (min-width: 1150px) {
+      @apply grid-cols-4;
+    }
+  }
+
+ 
+  .desktop-wide\:max-w-desktop {
+    @media (min-width: 1150px) {
+      @apply max-w-[1100px];
+    }
+  }
+}    
+  
 
 @theme {
 --color-Lime-Green: hsl(163, 72%, 41%);
